@@ -1,0 +1,55 @@
+##################
+# To run this code use python Plot_parameters_diff_equation.py input_temp
+###################
+# The output curves will be seen one by one and will be saved in your working folder. So to see the next curves, close the previous curves
+#######################
+#This is the input file that will be used for giving information about which plots are required to be made
+# To see the graphs you want please follow the following steps
+# The first line of the arguments that you will write will create single curves. As an example if you
+# write 7 4 3 it will create three curves corresponding to the serial numbers at 7 4 and 3. If you do not want any single curves write 0.
+# If you want to create overlapping curves, then after line 1, just write the serial no of the equations you want to overlap. There is no limit to how many different overlaps are possible. Just write them on different lines
+# Once that is done. Write the word "add" and then write the serial number which curves you want to add up ON the next line.
+#After that write the word "subtract" and then the serial numbers to find the difference between "2" curves. Note the order of the inputs. If you write subtract 1 7 then the function value of 7 will be subtracted from the values of 1 and the final result will be plotted.
+# Note overlapping curves, add, and subtract are not necessary. The only input that is necessary is line 1. 
+#######################
+#The serial number are corresponding to the particular coefficient.
+#For case A
+#1. H(I) Recombination
+#2. He(I) recombination
+#3. He(II) recombination
+#4. H(I) recombination cooling rates (CR)
+#5. He(I) recombination CR
+#6. He(II) recombination CR
+#For case B
+#7. H(I) Recombination
+#8. He(I) recombination
+#9. He(II) recombination
+#10. H(I) recombination cooling rates (CR)
+#11. He(I) recombination CR
+#12. He(II) recombination CR
+#No distinction between Case A and B
+#13. H(I) collisional ionization
+#14. He(I) collisional ionization
+#15. He(II) collisional ionization
+#16. Dielectric recombination  
+#17. H(I) collisional ionization CR 
+#18. He(I) collisionail ionization CR
+#19. He(II) collisional ionization CR
+#20. Dielectric recombination CR
+#21. H(I) line excitation CR
+#22. He(II) line excitation CR
+#23. Bremsstrahlung
+#24. H(I) CI CR - ATON
+#25. H(I) Case A RC CR - ATON
+#26. H(I) Case B RC cR -ATON
+#27. Bremmstrahlung - ATON
+#28. Collisional Excitation - ATON
+#Input starts here
+12 14 20
+1 7 
+25 4
+26 10
+add 17 18 19
+add 13 14 15  
+subtract 1 7
+subtract 2 8
